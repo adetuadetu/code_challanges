@@ -17,7 +17,8 @@ def RomanToNum(s):
         if i + 1 < len(s) and s[i:i+2] in roman:
 
             # If the double numeral is within the key the value will be added to the tally 
-            # eg if the double numeral is IX; I = first i X = second i and +2 will be added to the iteration
+            # eg if the double numeral is IX; I = first i:i. X = +2 
+            print(s[i:i+2])
             num += roman[s[i:i+2]]
 
             # Iteration will be +2 since the double numeral equates to a single value 
